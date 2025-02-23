@@ -1,0 +1,44 @@
+# Laravel specific
+/vendor/
+/node_modules/
+/.env
+/storage/*.key
+/storage/logs/
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/views/
+
+# Composer
+composer.phar
+composer.lock
+
+# NPM
+npm-debug.log
+yarn-error.log
+
+# Build and compiled assets
+/public/build/
+/public/hot
+/public/storage
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Environment files
+*.env
+!.env.example
+
+# Sensitive configuration
+*.key
+deployment.log
+
+# Docker
+.docker/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
