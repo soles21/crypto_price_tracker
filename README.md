@@ -13,7 +13,7 @@ The Crypto Price Aggregator is a robust system that:
 
 ### Technology Stack
 - PHP 8.2+
-- Laravel 10.x
+- Laravel 11.x
 - MySQL 8.0+
 - Redis
 - Laravel Reverb for WebSocket
