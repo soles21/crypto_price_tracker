@@ -2,7 +2,7 @@
 
 A real-time cryptocurrency price aggregator built with Laravel, featuring WebSocket communication via Laravel Reverb for live updates.
 
-## Part 1: Project Overview and Installation
+## Project Overview and Installation
 
 ### Overview
 The Crypto Price Aggregator is a robust system that:
