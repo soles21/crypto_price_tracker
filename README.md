@@ -31,8 +31,8 @@ The Crypto Price Aggregator is a robust system that:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/crypto-aggregator
-cd crypto-aggregator
+git clone https://github.com/soles21/crypto_price_tracker
+cd crypto_price_tracker
 
 # Copy environment file
 cp .env.example .env
@@ -57,8 +57,8 @@ docker-compose exec app php artisan key:generate
 #### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/crypto-aggregator
-cd crypto-aggregator
+git clone https://github.com/soles21/crypto_price_tracker
+cd crypto_price_tracker
 ```
 
 #### Install Dependencies
