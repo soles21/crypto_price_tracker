@@ -469,6 +469,3 @@ This project is fully containerized using Docker Compose to ensure a non-invasiv
 For any questions, contributions, or issues, please open an issue or submit a pull request on GitHub.
 
 Happy coding!
-```
-
----
