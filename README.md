@@ -1,8 +1,3 @@
-Below is the complete, full updated README in Markdown format that includes every section—from project overview to known issues, limitations, potential improvements, and the local Reverb setup. You can copy this entire content as your **README.md** file on GitHub.
-
----
-
-```markdown
 # Crypto Price Aggregator
 
 A real-time cryptocurrency price aggregator built with Laravel, featuring WebSocket communication via Laravel Reverb for live updates.
