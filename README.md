@@ -105,20 +105,23 @@ The Reverb WebSocket server is containerized as a separate service to handle rea
 
 - **Reverb Service in Docker Compose:**  
   The `reverb` service (see below) runs:
-  
+
   ```bash
   php artisan reverb:start --debug
   ```
 
 - **Environment Setup:**  
-  The `.env` file must have `BROADCAST_DRIVER=reverb` along with your usual database, Redis, and other configurations (see above).
+  Ensure your `.env` file includes `BROADCAST_DRIVER=reverb` along with your usual database, Redis, and other configurations (see above).
 
 - **Local Testing:**  
   Once the containers are up (with `docker-compose up -d`), the Reverb server starts automatically. To check its status, use:
-  
+
   ```bash
   docker-compose logs reverb
   ```
+
+- **Full Reverb Setup Documentation:**  
+  For complete details on configuring and using Laravel Reverb, refer to the [Laravel Reverb Documentation](https://laravel.com/docs/11.x/reverb).
 
 ---
 
@@ -416,7 +419,7 @@ graph TD
 
 - **Environment Configuration:**  
   Validate and cache configuration using:
-  
+
   ```bash
   php artisan env:check
   php artisan config:cache
@@ -464,7 +467,7 @@ echo "Deployment completed."
 
 ## Final Notes
 
-This project is fully containerized using Docker Compose to ensure a non-invasive, isolated development environment. All dependencies—including MySQL, Redis, Nginx, and the Reverb WebSocket server—run in separate containers, ensuring no modifications to your host system.  
+This project is fully containerized using Docker Compose to ensure a non-invasive, isolated development environment. All dependencies—including MySQL, Redis, Nginx, and the Reverb WebSocket server—run in separate containers, ensuring no modifications to your host system.
 
 For any questions, contributions, or issues, please open an issue or submit a pull request on GitHub.
 
