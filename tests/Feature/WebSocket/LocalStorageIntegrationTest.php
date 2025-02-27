@@ -20,7 +20,6 @@ class LocalStorageIntegrationTest extends TestCase
         
         $response->assertStatus(200);
         
-        // Assert that the localStorage handling script is included
         $response->assertSee('function storePriceUpdate(data)', false);
         $response->assertSee("localStorage.setItem('crypto_prices',", false);
         $response->assertSee("document.dispatchEvent(new CustomEvent('crypto-price-updated'", false);
@@ -35,7 +34,6 @@ class LocalStorageIntegrationTest extends TestCase
         
         $response->assertStatus(200);
         
-        // Assert that the correct WebSocket channel and event are being listened to
         $response->assertSee("Echo.channel('crypto-prices')", false);
         $response->assertSee("listen('.crypto.price.updated'", false);
     }
@@ -55,7 +53,6 @@ class LocalStorageIntegrationTest extends TestCase
         
         $response->assertStatus(200);
         
-        // Assert that the price card component has localStorage checking code
         $response->assertSee('checkForUpdates: function()', false);
         $response->assertSee("JSON.parse(localStorage.getItem('crypto_prices')", false);
         $response->assertSee("document.addEventListener('crypto-price-updated'", false);
@@ -76,7 +73,6 @@ class LocalStorageIntegrationTest extends TestCase
         
         $response->assertStatus(200);
         
-        // Assert that there are cleanup functions for event listeners
         $response->assertSee('cleanup: function()', false);
         $response->assertSee('clearInterval(this.pollIntervalId)', false);
     }

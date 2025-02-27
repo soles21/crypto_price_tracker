@@ -63,7 +63,7 @@ class PriceUpdateTest extends DuskTestCase
             $browser->visit('/dashboard')
                 ->waitForText('BTCUSDT')
                 ->assertSee('50,000.00')
-                // Simulate a price update via localStorage
+        
                 ->script([
                     'const priceData = {
                         BTCUSDT: {
@@ -79,7 +79,7 @@ class PriceUpdateTest extends DuskTestCase
                         detail: { pair: "BTCUSDT", data: priceData.BTCUSDT }
                     }));'
                 ])
-                ->pause(3000) // Wait for the UI to update
+                ->pause(3000)
                 ->assertSee('52,000.00');
         });
     }
