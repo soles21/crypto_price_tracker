@@ -1,6 +1,10 @@
 # Crypto Price Tracker
 
+## Video Preview
+[Watch 30-Second Frontend Demo (3 MB)](https://sdk.cyclonverse.com/crypto_tracker.mp4)
+
 A real-time cryptocurrency price tracker built with Laravel, Laravel Livewire, Laravel Reverb WebSockets, and SQLite.
+
 
 ## Features
 
@@ -63,7 +67,7 @@ The application follows a clean, modular architecture based on SOLID principles:
 1. Clone the repository:
    ```bash
    git clone https://github.com/soles21/crypto_price_tracker.git
-   cd crypto-price-tracker
+   cd crypto_price_tracker
    ```
 
 2. Create .env file:
