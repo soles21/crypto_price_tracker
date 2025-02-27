@@ -89,11 +89,11 @@ The application follows a clean, modular architecture based on SOLID principles:
    # Reverb WebSocket
    REVERB_APP_ID=crypto_price_tracker
    REVERB_APP_KEY=your_reverb_app_key_here
-   REVERB_HOST=reverb
+   REVERB_HOST="reverb"
    REVERB_PORT=8080
    
    # For frontend WebSocket connections
-   VITE_REVERB_HOST=localhost
+   VITE_REVERB_HOST="localhost"
    VITE_REVERB_PORT=8080
    VITE_REVERB_APP_KEY="${REVERB_APP_KEY}"
    ```
